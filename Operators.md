@@ -679,3 +679,349 @@ console.log(a); // 5
 7. If `let y = 10; y--;`, what is `y`?
 
 ---
+
+In math, `acos` stands for **arc cosine** or **inverse cosine**. It is the inverse function of the **cosine** function, and it's used to find the angle whose cosine is a given number.
+
+### Definition:
+
+If
+
+$$
+\cos(\theta) = x
+$$
+
+then
+
+$$
+\theta = \arccos(x)
+$$
+
+or
+
+$$
+\theta = \text{acos}(x)
+$$
+
+### Domain and Range:
+
+* **Domain** (input values): $-1, 1$ — because cosine values range between -1 and 1.
+* **Range** (output values in radians): $0, π$ — that's from 0 to 180 degrees.
+
+### Example:
+
+If
+
+$$
+x = 0.5
+$$
+
+then
+
+$$
+\theta = \arccos(0.5) = \frac{\pi}{3} \text{ radians (or 60 degrees)}
+$$
+
+Let me know if you want it explained with a graph or in a programming context (like JavaScript or Python).
+
+In **JavaScript**, `Math.acos()` is a built-in function that returns the **arccosine** (inverse cosine) of a number in **radians**.
+
+---
+
+### 🔹 Syntax:
+
+```js
+Math.acos(x)
+```
+
+### 🔹 Parameters:
+
+* `x`: A number between **-1 and 1** (inclusive).
+
+### 🔹 Returns:
+
+* A **number** between `0` and `π` radians (≈ 0 to 3.14159), representing the angle whose cosine is `x`.
+
+---
+
+### 🔹 Example:
+
+```js
+console.log(Math.acos(1));      // 0 radians (cos⁻¹(1) = 0°)
+console.log(Math.acos(0));      // 1.5707963267948966 radians (π/2 or 90°)
+console.log(Math.acos(-1));     // 3.141592653589793 radians (π or 180°)
+```
+
+---
+
+### 🔹 Convert to Degrees (Optional):
+
+If you want the result in degrees:
+
+```js
+function toDegrees(radians) {
+  return radians * (180 / Math.PI);
+}
+
+console.log(toDegrees(Math.acos(0.5))); // 60 degrees
+```
+
+---
+In math and JavaScript, `acosh` stands for **inverse hyperbolic cosine**.
+
+---
+
+### 🔹 Math Definition:
+
+The **inverse hyperbolic cosine** function answers the question:
+
+> “What value of `x` gives a certain value when plugged into `cosh(x)`?”
+
+If:
+
+$$
+y = \cosh(x)
+$$
+
+Then:
+
+$$
+x = \text{acosh}(y)
+$$
+
+### 🔹 Formula:
+
+$$
+\text{acosh}(x) = \ln\left(x + \sqrt{x^2 - 1}\right)
+$$
+
+---
+
+### 🔹 In JavaScript:
+
+```js
+Math.acosh(x)
+```
+
+#### 📌 Parameters:
+
+* `x`: A number **greater than or equal to 1**.
+
+#### 📌 Returns:
+
+* The inverse hyperbolic cosine of `x`, in **radians**.
+
+---
+
+### 🔹 Example:
+
+```js
+console.log(Math.acosh(1));     // 0
+console.log(Math.acosh(2));     // 1.3169578969248166
+console.log(Math.acosh(10));    // 2.993222846126381
+```
+
+> ⚠️ `Math.acosh(x)` will return `NaN` if `x < 1`, because real-valued inverse hyperbolic cosine is undefined for those values.
+
+---
+
+`cbrt` stands for **cube root** — it returns the number that, when cubed, equals the given value.
+
+---
+
+### 🔹 In Math:
+
+The cube root of a number `x` is a number `y` such that:
+
+$$
+y^3 = x
+$$
+
+---
+
+### 🔹 In JavaScript:
+
+```js
+Math.cbrt(x)
+```
+
+#### 📌 Parameters:
+
+* `x`: Any number (positive, negative, or zero).
+
+#### 📌 Returns:
+
+* The **cube root** of `x`.
+
+---
+
+### 🔹 Examples:
+
+```js
+console.log(Math.cbrt(8));    // 2  → because 2³ = 8
+console.log(Math.cbrt(27));   // 3  → 3³ = 27
+console.log(Math.cbrt(-8));   // -2 → (-2)³ = -8
+console.log(Math.cbrt(0));    // 0
+```
+
+---
+
+Unlike square roots, **cube roots of negative numbers are real**, so `Math.cbrt(-27)` works fine and returns `-3`.
+
+Let me know if you want a quick comparison between `Math.sqrt()` and `Math.cbrt()`.
+
+
+In math, **`ceil`** (short for **ceiling**) refers to the **smallest integer greater than or equal to a given number**.
+
+---
+
+### 🔹 Definition:
+
+The **ceiling** of a number `x`, written as:
+
+$$
+\lceil x \rceil
+$$
+
+is the **smallest integer** such that:
+
+$$
+\lceil x \rceil \ge x
+$$
+
+---
+
+### 🔹 Examples:
+
+* $\lceil 4.3 \rceil = 5$
+* $\lceil -2.7 \rceil = -2$
+* $\lceil 7 \rceil = 7$
+
+It always **rounds up** to the nearest whole number, even if the number is negative.
+
+---
+
+### 🔹 In JavaScript:
+
+```js
+Math.ceil(x)
+```
+
+#### Example:
+
+```js
+console.log(Math.ceil(4.2));   // 5
+console.log(Math.ceil(-1.8));  // -1
+```
+
+---
+
+Let me know if you want the difference between `ceil`, `floor`, `round`, and `trunc` — they’re often used together!
+
+
+
+In math, **E** (usually written as `e`) is a special **mathematical constant** called **Euler's number**.
+
+---
+
+### 🔹 What is `e`?
+
+`e` is an **irrational number** (it can’t be expressed as a fraction and its decimal goes on forever without repeating).
+
+$$
+e \approx 2.718281828459045...
+$$
+
+---
+
+### 🔹 Why is `e` important?
+
+`e` is the **base of the natural logarithm** (`ln`), and it appears in many areas of math, science, and engineering — especially in:
+
+* **Exponential growth and decay**
+* **Compound interest**
+* **Probability theory**
+* **Calculus**, especially in derivatives and integrals
+
+---
+
+### 🔹 Example in Math:
+
+$$
+f(x) = e^x
+$$
+
+This function has the unique property that:
+
+$$
+\frac{d}{dx}e^x = e^x
+$$
+
+Meaning the **derivative of $e^x$** is **$e^x$** — it’s its own rate of change.
+
+---
+
+### 🔹 In JavaScript:
+
+You can use `Math.E` to access the value of `e`:
+
+```js
+console.log(Math.E); // 2.718281828459045
+```
+
+---
+
+Would you like a real-world example of where `e` shows up? Like in compound interest or population growth?
+
+Great question! In math, **log** refers to the **logarithm**, which is the **inverse operation of exponentiation**.
+
+---
+
+### 🔹 What is a Logarithm?
+
+If:
+
+$$
+b^y = x
+$$
+
+Then:
+
+$$
+\log_b(x) = y
+$$
+
+This means:
+
+> "To what power must I raise the base `b` to get `x`?"
+
+---
+
+### 🔹 Common Types of Logarithms:
+
+| Name            | Notation  | Base        | Example              |
+| --------------- | --------- | ----------- | -------------------- |
+| **Common log**  | `log(x)`  | 10          | $\log_{10}(100) = 2$ |
+| **Natural log** | `ln(x)`   | `e` ≈ 2.718 | $\ln(e^2) = 2$       |
+| **Binary log**  | `log₂(x)` | 2           | $\log_2(8) = 3$      |
+
+---
+
+### 🔹 In JavaScript:
+
+```js
+Math.log(x)       // natural log (base e)
+Math.log10(x)     // common log (base 10)
+Math.log2(x)      // base 2 log
+```
+
+#### Example:
+
+```js
+console.log(Math.log(1));      // 0 → because e^0 = 1
+console.log(Math.log10(100));  // 2 → because 10^2 = 100
+console.log(Math.log2(8));     // 3 → because 2^3 = 8
+```
+
+---
+
+Would you like a real-world example? Logs are super useful in **compounding, algorithms, sound intensity, and even earthquakes**!
