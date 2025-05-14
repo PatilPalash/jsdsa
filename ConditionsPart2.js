@@ -11,6 +11,11 @@
 // }
 
 //2) Shop discount // Question2 ---------------------------------------
+// Amount          | Discount
+// 0-5000          |    0%
+// 5001-7000       |    5%
+// 7001-9000       |    10%
+// more than 9000  |    20%
 // let amount = Number(prompt("what is the final amount ?"))
 // let dis = 0;
 // if (isNaN(amount)) {

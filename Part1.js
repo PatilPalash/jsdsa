@@ -132,15 +132,15 @@
 // console.log(Math.random()*100000) // 0 to 100000
 
 
-// console.log(Math.round(10.5))
-// console.log(Math.ceil(10.1))
-// console.log(Math.floor(10.8))
-// console.log(Math.trunc(18.98))
-// console.log(Math.pow(2,5)) // 2🔺5
-// console.log(Math.sqrt(25))
-// console.log(Math.abs(15))
-// console.log(Math.max(78,65,12))
-// console.log(Math.min(78,65,12))
+// console.log(Math.round(10.5)) // 11
+// console.log(Math.ceil(10.1)) // 11
+// console.log(Math.floor(10.8)) // 10
+// console.log(Math.trunc(18.98)) // 18
+// console.log(Math.pow(2,5)) // 32
+// console.log(Math.sqrt(25)) // 5
+// console.log(Math.abs(15)) // 15
+// console.log(Math.max(78,65,12)) // 78
+// console.log(Math.min(78,65,12)) // 12
 // // let a = 25.487845
-// // console.log(a.toFixed(2))
-// console.log(Math.trunc((Math.random()*9000)+1000)); // 0 to 999
+// // console.log(a.toFixed(2)) // 25.49
+// console.log(Math.trunc((Math.random()*9000)+1000)); // 1000 to 9999
