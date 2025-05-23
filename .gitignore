@@ -1,0 +1,17 @@
+README.md
+node_modules/
+env/
+__pycache__/
+**/migrations/*
+!**/migrations/__init__.py
+general.log
+general.txt
+PREVIEW/
+bhushan
+backend/media/*
+!backend/media/.gitkeep
+media/**
+backend/Geopicx_Env/**
+backend/error.log
+.env
+

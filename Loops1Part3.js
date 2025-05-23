@@ -44,7 +44,7 @@
 // }
 
 
-// 1) questionn one sum of n natural numbers
+// 1) question one sum of n natural numbers
 
 // var pr = prompt("kaha tak add karwaaoge ?")
 // if(pr===null){
