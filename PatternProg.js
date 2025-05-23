@@ -1,4 +1,4 @@
-let prompt = require('prompt-sync')();
+ let prompt = require('prompt-sync')();
 
 // this single log take entier line and go in -
 // next line so if its blank also then also its take entier line
@@ -186,12 +186,40 @@ let n = Number(prompt("Enter a number: "))
 //     * * *
 //   * * * *
 // * * * * *
-for (let i = 1; i <= n; i++) {
-    for (let j = 1; j <= n - i; j++) {
-        process.stdout.write("  ")
-    }
-    for (let j = 1; j <=i; j++) {
-        process.stdout.write("* ")
+// for (let i = 1; i <= n; i++) {
+//     for (let j = 1; j <= n - i; j++) {
+//         process.stdout.write("  ")
+//     }
+//     for (let j = 1; j <=i; j++) {
+//         process.stdout.write("* ")
+//     }
+//     console.log()
+// }
+// Home work
+// Q. traingle
+// Q. X pattern only for  odd numbers
+// *   *
+//  * *
+//   *
+//  *  *
+// *    *  
+// for(i=1;i<=n;i++){
+//     for(j=1;j<=n;j++){
+//         if(i===j || i+j==n+1){
+//             process.stdout.write("* ")
+//         }else{
+//             process.stdout.write("  ")
+//         }
+//     }
+//     console.log()
+// }
+for(i=1;i<=n;i++){
+    for(j=1;j<=2*n-1;j++){
+        if(i===j || i+j==2*n){
+            process.stdout.write("* ")
+        }else{
+            process.stdout.write("  ")
+        }
     }
     console.log()
 }
