@@ -1,7 +1,7 @@
 // array is linear DS which stores multiple-
 // values in a continuous manner
 // ex. of linear DS array, linklist, stack, que
-let arr = []; // dinamic array
+// let arr = []; // dinamic array
 // always appends value using index
 // to appends value used push
 // arr.push(1)
@@ -73,4 +73,57 @@ let arr = []; // dinamic array
 // }
 // console.log(max)
 // Second Max element from array
-let arrTry = [10,30,56,43,29,64,49,60]
+// let arrTry = [10,30,56,43,29,64,49,60] // [10,20,30,40,40,40,40]
+// let max = Math.max(arrTry[0],arrTry[1])
+// let secmax = Math.min(arrTry[0],arrTry[1])
+
+// for(let i=2;i<arrTry.length;i++){
+//     if(arrTry[i]>max){
+//         secmax=max
+//         max=arrTry[i]
+//     }else if(arrTry[i]>secmax && max != arrTry[i]){
+//         secmax=arrTry[i]
+//     }
+// }
+// console.log(secmax)
+
+
+
+
+// Reverce the array New Space
+// let arr = [10,20,30,40,50]
+// let temp= new Array(arr.length)
+// let j=0
+// for(let i=arr.length -1; i>=0;i--){
+//     temp[j]=arr[i];
+//     j++
+// }
+// console.log(temp)
+
+
+// Reverse the array without makeing new  array
+// let arr = [10,20,30,40,50]
+// let i=0, j=arr.length-1;
+// while(i!=j){
+//     let temp=arr[i]
+//     arr[i]=arr[j]
+//     arr[j]=temp
+//     i++
+//     j--
+// }
+// console.log(arr)
+
+
+// Two Pointer algo [1,1,0,1,0,1,0,1,0,1,0,1,0,0,0]
+let arr = [1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0]
+let i = 0, j = 0;
+while (i < arr.length) {
+    if (arr[i] == 0) {
+        let temp = arr[i]
+        arr[i] = arr[j]
+        arr[j] = temp;
+        j++
+    }
+    i++
+}
+console.log(arr)
