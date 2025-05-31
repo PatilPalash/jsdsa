@@ -84,22 +84,22 @@ let prompt = require('prompt-sync')();
 // Once the block sizes are equal, perform the final block swap between A and B. 
 // 5. Reversal:
 // Use three in-place reversals (rotate A, rotate B, rotate AB) to complete the rotation. 
-let arr = [1, 2, 3, 4, 5]
-let k = Number(prompt("Enter K Number"))
-k = k % arr.length
-reverse(0, k - 1)
-reverse(k, arr.length - 1)
-reverse(0, arr.length - 1)
-console.log(arr)
-function reverse(i, j) {
-    while (i < j) {
-        let temp = arr[i]
-        arr[i] = arr[j]
-        arr[j] = temp
-        i++
-        j--
-    }
-}
+// let arr = [1, 2, 3, 4, 5]
+// let k = Number(prompt("Enter K Number"))
+// k = k % arr.length
+// reverse(0, k - 1)
+// reverse(k, arr.length - 1)
+// reverse(0, arr.length - 1)
+// console.log(arr)
+// function reverse(i, j) {
+//     while (i < j) {
+//         let temp = arr[i]
+//         arr[i] = arr[j]
+//         arr[j] = temp
+//         i++
+//         j--
+//     }
+// }
 
 
 // chatgpt
@@ -125,3 +125,51 @@ function reverse(i, j) {
 
 
 // Q2. Right rotation by k element ///////////////////////
+
+
+// // Q3. Merge Sorted Array
+// let arr1 = [2, 5, 6]
+// let arr2 = [1, 3, 4, 8]
+// let merge = new Array(arr1.length + arr2.length)
+// // we dont no the how much items we have iterate so we
+// // have value of both array
+// let i = j = k = 0
+// while (i < arr1.length && j < arr2.length) {
+//     if (arr1[i] < arr2[j]) {
+//         merge[k++] = arr1[i++]
+//     } else {
+//         merge[k++] = arr2[j++]
+//     }
+// }
+// while (j < arr2.length) {
+//     merge[k++] = arr2[j++]
+// }
+// while (i < arr1.length) {
+//     merge[k++] = arr1[i++]
+// }
+// console.log(merge)
+
+// HomeWork
+// Q88.Merge Sorted Array(leetCode)
+
+// Q4.  Best Time to Buy and sell Stock
+// var maxProfit=function(prices){
+//     let maxProfit = 0;
+//     let min = prices[0];
+//     for(let i=0;i<prices.length;i++){
+//         if(prices[i]<min) min=prices[i]
+//         let profit = prices[i]-min
+//         maxProfit=Math.max(maxProfit, profit)
+//     }
+//     return maxProfit;
+// }
+
+// console.log(maxProfit([7,6,4,3,1])) //0
+// console.log(maxProfit([7,1,5,3,6,4])) //5
+
+
+// Q5. Sort the Colors
+
+var sortColors=function(nums){
+    let i=0
+}
